@@ -3,8 +3,8 @@ clc, clear, close all;
 graphname = input('Graph name: \n','s');    % 
 file_list = dir();                          % Ask user for name of the graph
 file_list(4).name;                          % Reads all of the files in the current directory 
-len = size(file_list);                      % 
-
+len = size(file_list);                      % INCLUDE ALL FILES FOR ANALYSIS IN THE ACTIVE DIRECTORY
+                                            %files should be .txt files with delimiters
 
 file_list.name;                             % Test case for errors
 
