@@ -9,7 +9,7 @@ len = size(file_list);                      % INCLUDE ALL FILES FOR ANALYSIS IN 
 file_list.name;                             % Test case for errors
 
 C = {[0 0.4470 0.7410]; [0.8500 0.3250 0.0980]; [0.9290 0.6940 0.1250]; [0.4940 0.1840 0.5560]; [0.4660 0.6740 0.1880]; [0.3010 0.7450 0.9330]; [0.6350 0.0780 0.1840]; [0 0 0]; [0 0.4470 0.7410]; [0.8500 0.3250 0.0980]; [0 0 0]; [0 0 0]; [0 0 0]; [0 0 0]; [0 0 0]; [0 0 0]};	
-
+%creates list for custom colors on the graph
 fig = figure;
 
 
@@ -129,9 +129,9 @@ fig = figure;
 
     
     points.MarkerEdgeColor = C{k};      %recolor points on graph
-    %maxlam.MarkerEdgeColor = C{i};
+    %maxlam.MarkerEdgeColor = C{k};
     maxplot.Color = C{k};               %recolor lines
-    %minlam.MarkerEdgeColor = C{i};
+    %minlam.MarkerEdgeColor = C{k};
     minplot.Color = C{k};               %recolor lines
     
     
